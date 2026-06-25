@@ -1,5 +1,5 @@
 ﻿//+------------------------------------------------------------------+
-//|  Tokyo Bridge EA v3.7                                             |
+//|  Tokyo Bridge EA v3.7  - try to test on fundedelite challenege account with disable auto trade                                           |
 //+------------------------------------------------------------------+
 #property copyright ""
 #property version   "3.70"
