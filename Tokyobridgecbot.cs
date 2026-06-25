@@ -87,6 +87,9 @@ namespace cAlgo.Robots
                 string tradeId = pos.Id.ToString();
                 if (tradeId == lastTradeId) return; // already processed
 
+                if (pos.StopLoss == null || pos.TakeProfit == null) return;
+                if (pos.StopLoss.Value <= 0 || pos.TakeProfit.Value <= 0) return;
+
                 lastTradeId = tradeId;
                 WriteToAllAccounts(pos, filePrefix);
                 UpdatePanel($"{filePrefix.ToUpper()} trade written");
